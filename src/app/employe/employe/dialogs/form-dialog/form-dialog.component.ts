@@ -8,8 +8,10 @@ import {
 } from '@angular/forms';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { formatDate } from '@angular/common';
-import { AdvanceTable } from 'app/advance-table/advance-table.model';
+import { AdvanceTable, EmployeesDocTypes } from 'app/advance-table/advance-table.model';
 import { AdvanceTableService } from 'app/advance-table/advance-table.service';
+import documentValidator from 'assets/utils/custom-validators/document-validator.component';
+import { ParentErrorStateMatcher } from '@shared/utils/ParentErrorStateMatcher';
 
 export interface DialogData {
   id: number;
@@ -28,6 +30,8 @@ export class FormDialogComponent {
   dialogTitle: string;
   advanceTableForm: UntypedFormGroup;
   advanceTable: AdvanceTable;
+  indentificationOptions = EmployeesDocTypes;
+  parentStateMatcher = new ParentErrorStateMatcher();
   constructor(
     public dialogRef: MatDialogRef<FormDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData,
@@ -58,6 +62,11 @@ export class FormDialogComponent {
       ? 'Not a valid email'
       : '';
   }
+  handleDocChange(value: any) {
+    console.log(value);
+    this.advanceTableForm.get('document')?.setValidators([Validators.required, Validators.maxLength(10)])
+    this.advanceTableForm.updateValueAndValidity();
+  }
   createContactForm(): UntypedFormGroup {
     return this.fb.group({
       id: [this.advanceTable.id],
@@ -76,7 +85,9 @@ export class FormDialogComponent {
       address: [this.advanceTable.address],
       mobile: [this.advanceTable.mobile, [Validators.required]],
       country: [this.advanceTable.country],
-    });
+      document: [this.advanceTable.document, [Validators.required]],
+      docType: [this.advanceTable.docType, [Validators.required]]
+    }, {validators: documentValidator()});
   }
   submit() {
     // emppty stuff

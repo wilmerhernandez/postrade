@@ -28,6 +28,8 @@ export class EmployeComponent extends UnsubscribeOnDestroyAdapter implements OnI
     'img',
     'fName',
     'lName',
+    'docType',
+    'document',
     'email',
     'gender',
     'bDate',
@@ -240,6 +242,7 @@ export class EmployeComponent extends UnsubscribeOnDestroyAdapter implements OnI
         Mobile: x.mobile,
         Address: x.address,
         Country: x.country,
+        Identification: x.document,
       }));
 
     TableExportUtil.exportToExcel(exportData, 'excel');

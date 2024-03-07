@@ -94,6 +94,18 @@
                     <mat-cell *matCellDef="let row" (contextmenu)="onContextMenu($event, row)">
                       <span class="mobile-label">Last Name:</span>{{row.lName}}</mat-cell>
                   </ng-container>
+                  <ng-container matColumnDef="docType">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header>Document Type
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row" (contextmenu)="onContextMenu($event, row)">
+                      <span class="mobile-label">Document type</span>{{row.docType}}</mat-cell>
+                  </ng-container>
+                  <ng-container matColumnDef="document">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header>Document
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row" (contextmenu)="onContextMenu($event, row)">
+                      <span class="mobile-label">Document</span>{{row.document}}</mat-cell>
+                  </ng-container>
                   <ng-container matColumnDef="email">
                     <mat-header-cell *matHeaderCellDef mat-sort-header>Email</mat-header-cell>
                     <mat-cell *matCellDef="let row" (contextmenu)="onContextMenu($event, row)">
