@@ -10,7 +10,9 @@
     "mobile": "1234567890",
     "country": "usa",
     "lName": "Deo",
-    "injury": "Fever"
+    "injury": "Fever",
+    "document": "1000000000",
+    "docType": "C.C"
   },
   {
     "id": "002",
@@ -22,7 +24,9 @@
     "address": "950 Throop Avenue",
     "mobile": "1234567890",
     "country": "france",
-    "lName": "Patel"
+    "lName": "Patel",
+    "document": "1000000000",
+    "docType": "C.C"
   },
   {
     "id": "003",
@@ -34,7 +38,9 @@
     "address": "981 Village Road",
     "mobile": "1234567890",
     "country": "germany",
-    "lName": "Shah"
+    "lName": "Shah",
+    "document": "1000000000",
+    "docType": "C.C"
   },
   {
     "id": "004",
@@ -46,7 +52,9 @@
     "address": "986 Gandhi Street",
     "mobile": "1234567890",
     "country": "spain",
-    "lName": " Singh"
+    "lName": " Singh",
+    "document": "1000000000",
+    "docType": "C.C"
   },
   {
     "id": "005",
@@ -58,7 +66,9 @@
     "address": "857 Coleman Street",
     "mobile": "1234567890",
     "country": "turkey",
-    "lName": "Smith"
+    "lName": "Smith",
+    "document": "1000000000",
+    "docType": "C.C"
   },
   {
     "id": "006",
@@ -70,7 +80,9 @@
     "address": "857 Gandhi Street",
     "mobile": "1234567890",
     "country": "india",
-    "lName": "Ramos"
+    "lName": "Ramos",
+    "document": "1000000000",
+    "docType": "C.C"
   },
   {
     "id": "007",
@@ -82,7 +94,9 @@
     "address": "857 Coleman Street",
     "mobile": "1234567890",
     "country": "usa",
-    "lName": "Ryan"
+    "lName": "Ryan",
+    "document": "1000000000",
+    "docType": "C.C"
   },
   {
     "id": "008",
@@ -94,7 +108,9 @@
     "address": "986 Gandhi Street",
     "mobile": "1234567890",
     "country": "spain",
-    "lName": "Cox"
+    "lName": "Cox",
+    "document": "1000000000",
+    "docType": "C.C"
   },
   {
     "id": "009",
@@ -106,7 +122,9 @@
     "address": "986 Gandhi Street",
     "mobile": "1234567890",
     "country": "turkey",
-    "lName": "Shah"
+    "lName": "Shah",
+    "document": "1000000000",
+    "docType": "C.C"
   },
   {
     "id": "010",
@@ -118,7 +136,9 @@
     "address": "857 Coleman Street",
     "mobile": "1234567890",
     "country": "germany",
-    "lName": "Satou"
+    "lName": "Satou",
+    "document": "1000000000",
+    "docType": "C.C"
   },
   {
     "id": "011",
@@ -130,7 +150,9 @@
     "address": "986 Coleman Street",
     "mobile": "1234567890",
     "country": "india",
-    "lName": "Pandit"
+    "lName": "Pandit",
+    "document": "1000000000",
+    "docType": "C.C"
   },
   {
     "id": "012",
@@ -142,7 +164,9 @@
     "address": "857 Gandhi Street",
     "mobile": "1234567890",
     "country": "usa",
-    "lName": "Saikh"
+    "lName": "Saikh",
+    "document": "1000000000",
+    "docType": "C.C"
   },
   {
     "id": "013",
@@ -154,7 +178,9 @@
     "address": "950 Throop Avenue",
     "mobile": "1234567890",
     "country": "germany",
-    "lName": "Prajapati"
+    "lName": "Prajapati",
+    "document": "1000000000",
+    "docType": "C.C"
   },
   {
     "id": "014",
@@ -166,7 +192,9 @@
     "address": "981 Village Road",
     "mobile": "1234567890",
     "country": "spain",
-    "lName": "Rao"
+    "lName": "Rao",
+    "document": "1000000000",
+    "docType": "C.C"
   },
   {
     "id": "015",
@@ -178,7 +206,9 @@
     "address": "986 Gandhi Street",
     "mobile": "1234567890",
     "country": "turkey",
-    "lName": "Smith"
+    "lName": "Smith",
+    "document": "1000000000",
+    "docType": "C.C"
   },
   {
     "id": "016",
@@ -190,6 +220,8 @@
     "address": "857 Gandhi Street",
     "mobile": "1234567890",
     "country": "turkey",
-    "lName": "Jani"
+    "lName": "Jani",
+    "document": "1000000000",
+    "docType": "C.C"
   }
 ]

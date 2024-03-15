@@ -10,6 +10,8 @@ export class AdvanceTable {
   mobile: string;
   address: string;
   country: string;
+  document: string;
+  docType: EmployeesDocTypes;
   constructor(advanceTable: AdvanceTable) {
     {
       this.id = advanceTable.id || this.getRandomID();
@@ -22,6 +24,8 @@ export class AdvanceTable {
       this.mobile = advanceTable.mobile || '';
       this.address = advanceTable.address || '';
       this.country = advanceTable.country || '';
+      this.document = advanceTable.document || '';
+      this.docType = advanceTable.docType || '';
     }
   }
   public getRandomID(): number {
@@ -31,3 +35,19 @@ export class AdvanceTable {
     return S4() + S4();
   }
 }
+export enum docTypes {
+  CC = 'C.C',
+  PASSPORT = 'PAS',
+  NIT = 'NIT',
+  CE = 'C.E'
+}
+export enum EmployeesDocTypes {
+  CC =  docTypes.CC,
+  PASSPORT =  docTypes.PASSPORT,
+  CE =  docTypes.CE,
+}
+
+
+
+
+
